@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoProgramacion", "ProyectoProgramacion\ProyectoProgramacion.csproj", "{9553B5D2-7827-44E0-9E09-485BE1F34DD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dll_LibreriaClase", "Dll_LibreriaClase\Dll_LibreriaClase.csproj", "{896B33F4-F879-40A7-B4BC-BB673E402485}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "EscuelaDeChoferesBonao", "EscuelaDeChoferesBonao\EscuelaDeChoferesBonao.vdproj", "{EF67D8DD-C5B5-4CBF-B417-F3D171FD5FE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9553B5D2-7827-44E0-9E09-485BE1F34DD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9553B5D2-7827-44E0-9E09-485BE1F34DD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9553B5D2-7827-44E0-9E09-485BE1F34DD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9553B5D2-7827-44E0-9E09-485BE1F34DD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{896B33F4-F879-40A7-B4BC-BB673E402485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{896B33F4-F879-40A7-B4BC-BB673E402485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{896B33F4-F879-40A7-B4BC-BB673E402485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{896B33F4-F879-40A7-B4BC-BB673E402485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF67D8DD-C5B5-4CBF-B417-F3D171FD5FE5}.Debug|Any CPU.ActiveCfg = Debug
+		{EF67D8DD-C5B5-4CBF-B417-F3D171FD5FE5}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {263B6DFE-4C49-4C10-B638-4BE5D3DF2504}
+	EndGlobalSection
+EndGlobal
