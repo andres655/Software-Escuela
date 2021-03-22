@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using Dll_LibreriaClase;
+using System;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Dll_LibreriaClase;
-using System.Data.SqlClient;
 
 namespace ProyectoProgramacion
 {
@@ -22,12 +15,12 @@ namespace ProyectoProgramacion
         public DataSet LLenarDataGV(string tabla)
         {
             DataSet Ds;
-                string cmd = string.Format("select Codigo_Estudiante as Codigo, Nombre_Estudiante as Nombre,Asistencia,Fecha_Asistencia as Ultima_Asistencia ,direccion  from Estudiante where Estado=1");
-                Ds = Utilidades.Ejecutar(cmd);
+            string cmd = string.Format("select Codigo_Estudiante as Codigo, Nombre_Estudiante as Nombre,Asistencia,Fecha_Asistencia as Ultima_Asistencia ,direccion  from Estudiante where Estado=1");
+            Ds = Utilidades.Ejecutar(cmd);
             return Ds;
         }
 
-        
+
 
         private void button1_Click_1(object sender, EventArgs e)
         {/*
@@ -62,7 +55,7 @@ namespace ProyectoProgramacion
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-           // Abrir_Ruta(lb_ruta_objetivo, false);
+            // Abrir_Ruta(lb_ruta_objetivo, false);
         }
 
 
@@ -112,7 +105,7 @@ namespace ProyectoProgramacion
             catch (Exception)
             {
             }*/
-                    
+
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -149,7 +142,7 @@ namespace ProyectoProgramacion
         {
             dataGridView1.DataSource = LLenarDataGV("estudiantes").Tables[0];
 
-            String cmd = "Select DATEDIFF (Month, Fecha_Asistencia, GETDATE()) as Month From Estudiante" ;
+            String cmd = "Select DATEDIFF  (MONTH, FechaInscripcion, GETDATE()) as Month From Estudiante";
             DataSet Ds = Utilidades.Ejecutar(cmd);
 
 
@@ -158,7 +151,7 @@ namespace ProyectoProgramacion
             if (Diferencia_Mes > 2)
             {
 
-                cmd = String.Format("EXEC Actualizar_EstadoPorAusencia '{0}', '{1}'" ,0, 0);
+                cmd = String.Format("EXEC Actualizar_EstadoPorAusencia '{0}', '{1}'", 0, 0);
                 Utilidades.Ejecutar(cmd);
 
             }
@@ -177,7 +170,7 @@ namespace ProyectoProgramacion
 
         private void BtnAsistencia_Click(object sender, EventArgs e)
         {
-            if  (MessageBox.Show("Confirmar asistencia", "Salir", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("Confirmar asistencia", "Salir", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
 
                 try
@@ -192,8 +185,8 @@ namespace ProyectoProgramacion
 
                     LbNombre.Text = Ds.Tables[0].Rows[0]["Nombre_estudiante"].ToString();
 
-                    
-                    cmd = String.Format("EXEC ActualizarAsistencia '{0}', '{1}','{2}'", asistencia, Int16.Parse(TxtCodigo.Text),DateTime.Now);
+
+                    cmd = String.Format("EXEC ActualizarAsistencia '{0}', '{1}','{2}'", asistencia, Int16.Parse(TxtCodigo.Text), DateTime.Now);
                     Utilidades.Ejecutar(cmd);
                     MessageBox.Show("se ha guardado correctamente");
 

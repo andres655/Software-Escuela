@@ -5,9 +5,11 @@ VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoProgramacion", "ProyectoProgramacion\ProyectoProgramacion.csproj", "{9553B5D2-7827-44E0-9E09-485BE1F34DD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dll_LibreriaClase", "Dll_LibreriaClase\Dll_LibreriaClase.csproj", "{896B33F4-F879-40A7-B4BC-BB673E402485}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "EscuelaDeChoferes", "EscuelaDeChoferes\EscuelaDeChoferes.vdproj", "{136F97A8-02DE-497E-8D3F-C698A5E9933B}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "EscuelaDeChoferesBonao", "EscuelaDeChoferesBonao\EscuelaDeChoferesBonao.vdproj", "{EF67D8DD-C5B5-4CBF-B417-F3D171FD5FE5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dll_LibreriaCLase", "Dll_LibreriaCLase\Dll_LibreriaCLase.csproj", "{896B33F4-F879-40A7-B4BC-BB673E402485}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Escuela De Choferes", "Escuela De Choferes\Escuela De Choferes.vdproj", "{36CD5447-A44D-4476-A42A-99B37DD6543F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,12 +21,14 @@ Global
 		{9553B5D2-7827-44E0-9E09-485BE1F34DD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9553B5D2-7827-44E0-9E09-485BE1F34DD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9553B5D2-7827-44E0-9E09-485BE1F34DD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{136F97A8-02DE-497E-8D3F-C698A5E9933B}.Debug|Any CPU.ActiveCfg = Debug
+		{136F97A8-02DE-497E-8D3F-C698A5E9933B}.Release|Any CPU.ActiveCfg = Release
 		{896B33F4-F879-40A7-B4BC-BB673E402485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{896B33F4-F879-40A7-B4BC-BB673E402485}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{896B33F4-F879-40A7-B4BC-BB673E402485}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{896B33F4-F879-40A7-B4BC-BB673E402485}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EF67D8DD-C5B5-4CBF-B417-F3D171FD5FE5}.Debug|Any CPU.ActiveCfg = Debug
-		{EF67D8DD-C5B5-4CBF-B417-F3D171FD5FE5}.Release|Any CPU.ActiveCfg = Release
+		{36CD5447-A44D-4476-A42A-99B37DD6543F}.Debug|Any CPU.ActiveCfg = Debug
+		{36CD5447-A44D-4476-A42A-99B37DD6543F}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

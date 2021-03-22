@@ -12,7 +12,7 @@ namespace Dll_LibreriaClase
     {
         public static DataSet Ejecutar(String cmd)
         {
-            SqlConnection con = new SqlConnection("Data Source = PCAG150OVRHKF\\SQLEXPRESS;Initial Catalog= Estudiante; integrated security = true");
+            SqlConnection con = new SqlConnection("Data Source = PCAG150VRHKF\\MSSQLEXPRESS\\SQLEXPRESS;Initial Catalog= Estudiante; integrated security = true");
             con.Open();
             DataSet Ds = new DataSet();
             SqlDataAdapter DP = new SqlDataAdapter(cmd, con);

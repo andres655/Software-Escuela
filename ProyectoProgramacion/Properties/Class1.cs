@@ -1,18 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.SqlClient;
+﻿using ProyectoProgramacion.Properties;
+using System;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace Dll_LibreriaClase
 {
     public class Utilidades
     {
+        public static string ObtenerString()
+        {
+            return Settings.Default.EstudianteConnectionString;
+        }
+
         public static DataSet Ejecutar(String cmd)
         {
-            SqlConnection con = new SqlConnection("Data Source = PCAG150OVRHKF\\MSSQLEXPRESS;Initial Catalog= Estudiante; integrated security = true");
+            SqlConnection con = new SqlConnection(ObtenerString());
             con.Open();
             DataSet Ds = new DataSet();
             SqlDataAdapter DP = new SqlDataAdapter(cmd, con);
@@ -20,7 +22,7 @@ namespace Dll_LibreriaClase
             con.Close();
             return Ds;
         }
-        
+
 
     }
 }

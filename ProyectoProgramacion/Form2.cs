@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProyectoProgramacion
@@ -51,8 +44,8 @@ namespace ProyectoProgramacion
         {
             Form5 nuevo = new Form5();
             nuevo.Show();
-            
-            
+
+
         }
 
         Form5 f5;
@@ -99,6 +92,6 @@ namespace ProyectoProgramacion
         {
             Application.Exit();
         }
-        
+
     }
 }

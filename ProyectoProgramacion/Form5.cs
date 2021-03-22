@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using Dll_LibreriaClase;
+using System;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using Dll_LibreriaClase;
-using System.Data.SqlClient;
 
 
 namespace ProyectoProgramacion
@@ -32,7 +26,7 @@ namespace ProyectoProgramacion
 
         }
 
-        
+
         private void Form5_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = LLenarDataGV("estudiantes").Tables[0];
@@ -55,7 +49,7 @@ namespace ProyectoProgramacion
 
         private void BtnAprobar_Click(object sender, EventArgs e)
         {
-             String cmd = String.Format("EXEC Examen '{0}', '{1}'", 1, Int16.Parse(TxtCodigo.Text));
+            String cmd = String.Format("EXEC Examen '{0}', '{1}'", 1, Int16.Parse(TxtCodigo.Text));
             Utilidades.Ejecutar(cmd);
             MessageBox.Show("se ha guardado correctamente");
         }
